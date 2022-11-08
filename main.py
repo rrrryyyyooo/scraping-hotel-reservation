@@ -1,10 +1,10 @@
 import requests
-from bs4 import BeautifulSoup
+import chromedriver_binary
 from selenium import webdriver
 from time import sleep
 
 def main():
-    url = "https://reservation.anaihghotels.co.jp/booking/stay_pc/rsv/index.aspx?hi_id=41&lang=ja-JP&PMID=99502222&dt=2022/12/24"
+    url = "https://reservation.anaihghotels.co.jp/booking/stay_pc/rsv/index.aspx?hi_id=41&lang=ja-JP&PMID=99502222&dt=2022/12/04"
     
     # initialize driver
     options = webdriver.ChromeOptions()
