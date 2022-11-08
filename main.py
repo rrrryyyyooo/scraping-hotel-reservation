@@ -18,10 +18,13 @@ def main():
     driver.find_element_by_xpath('//*[@id="SearchBox_LnkBtnSearch"]').click()
     sleep(1)
 
+    # check vacancies
     if driver.find_elements_by_xpath('//*[@id="PNoDataErr"]'):
-        print('Ng')
+        print('ng')
     else:
         print('ok')
+    
+    driver.quit()
 
 if __name__ == "__main__":
     main()
