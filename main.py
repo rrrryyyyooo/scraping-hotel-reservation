@@ -13,7 +13,7 @@ def send_email(date, text):
     subject = f'{date}の空き状況'
     bodyText = text
     fromAddress = os.environ.get("FROMADDRESS")
-    toAddress = os.environ.get("FROMADDRESS")
+    toAddress = os.environ.get("TOADDRESS")
 
     # connect to SMTP server
     smtpobj = smtplib.SMTP('smtp.gmail.com', 587)
@@ -61,6 +61,7 @@ def main():
                 url: {url}"""
     
     send_email(date, text)
+    print(text)
     
     driver.quit()
 
