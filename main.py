@@ -5,6 +5,9 @@ from email.mime.text import MIMEText
 from email.utils import formatdate
 from selenium import webdriver
 from time import sleep
+from dotenv import load_dotenv
+
+
 
 def send_email(date, text):
     sendAddress = os.environ.get("FROMADDRESS")
@@ -66,4 +69,5 @@ def main():
     driver.quit()
 
 if __name__ == "__main__":
+    load_dotenv()
     main()
