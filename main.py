@@ -62,8 +62,8 @@ def main():
                 お探しの条件で{num}件のプランが見つかりました。\n
                 url: {url}"""
     
-    send_email(date, text)
-    print(text)
+        send_email(date, text)
+        print(text)
     
     driver.quit()
 
