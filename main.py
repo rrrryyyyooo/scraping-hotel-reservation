@@ -8,7 +8,6 @@ from time import sleep
 from dotenv import load_dotenv
 
 
-
 def send_email(date, text):
     sendAddress = os.environ.get("FROMADDRESS")
     password = os.environ.get("APP_PASSWORD")
