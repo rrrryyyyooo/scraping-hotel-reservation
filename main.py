@@ -55,8 +55,7 @@ def main():
         text = f"""検索日: {date}
                 お探しの条件では、利用できるプラン・客室がございません。条件を変更して再度お探しください。\n
                 url: {url}"""
-        print(text)
-        
+          
     else:
         num = driver.find_element_by_xpath('//*[@id="PnlPlanList"]/div[2]/p/span').text
         text = f"""検索日: {date}
@@ -64,8 +63,8 @@ def main():
                 url: {url}"""
     
         send_email(date, text)
-        print(text)
-    
+        
+    print(text)
     driver.quit()
 
 if __name__ == "__main__":
