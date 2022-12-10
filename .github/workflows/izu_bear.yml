@@ -1,5 +1,5 @@
 # ワークフロー名
-name: scraping_bot
+#一時停止中name: scraping_bot
 on:
   push:
   schedule:
