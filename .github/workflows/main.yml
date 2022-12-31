@@ -1,12 +1,12 @@
 # ワークフロー名
-name: scraping_bot
-on:
+#name: scraping_bot
+#on:
   push:
   schedule:
     # 定期実行する時間・・・①
     - cron: '0 */2 * * *'
 
-jobs:
+#jobs:
   build:
     # Ubuntuの最新版環境内で処理を実行することを指定
     runs-on: ubuntu-latest
